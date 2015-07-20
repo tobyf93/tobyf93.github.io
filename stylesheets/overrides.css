@@ -5,3 +5,21 @@
 #home #skill {
   font-weight: bold;
 }
+
+#contact header {
+  margin-bottom: 0;
+}
+
+.social-links li a {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 0px;
+  height: 100px;
+  width: 100px;
+}
+
+.social-links {
+  display: table;
+  margin: 0 auto 100px auto;
+  text-align: center;
+}
