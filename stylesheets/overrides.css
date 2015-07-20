@@ -1,3 +1,7 @@
 #project-content p {
   display: inline-block;
 }
+
+#home #skill {
+  font-weight: bold;
+}

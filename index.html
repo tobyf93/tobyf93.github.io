@@ -61,7 +61,7 @@
 					</button>
 
 					<!-- ======= LOGO (for small screens)========-->
-					<a class="navbar-brand visible-xs scrollto" href="#home">Jd</a>
+					<a class="navbar-brand visible-xs scrollto" href="#home">TF</a>
 
 				</div>
 
@@ -100,7 +100,7 @@
 					<div class="col-sm-6 text-col">
 
 						<h1>Toby Flemming</h1>
-						<p>Full-stack web developer from Sydney</p>
+						<p>Full-stack web developer</p>
 
 					</div>
 
@@ -148,7 +148,9 @@
 
 						<img class="img-responsive img-center img-circle scrollimation fade-left" src="images/about.jpg" alt="" />
 
-						<p class="text-center scrollimation fade-in">Cras convallis nunc vitae massa convallis fermentum. Fusce feugiat, sem at congue rutrum, nisl mauris facilisis tellus, vel interdum nulla enim at purus. Integer metus justo, pellentesque ac bibendum a, dapibus sed nisl. Donec vitae suscipit lacus. Vivamus lacinia nisi eget erat luctus, id mollis nunc molestie. </p>
+						<p class="text-center scrollimation fade-in">Web Development Immersive graduate from General Assembly with 3 years prior experience as a Software Developer.  I have a passion for emerging technologies, particularly in web development, pushing myself to find new and innovative ways of creating applications that are functionally sound and intuitive.</p>
+
+						<p class="text-center scrollimation fade-in">When I’m not behind a computer I’m at the beach.  Surf Life Saving has become a big part of my life, doing voluntary patrols and competing in surf boat rowing.  Bodyboarding and playing soccer are other strong interests of mine that keep me fit and active.</p>
 
 					</div>
 
@@ -156,7 +158,7 @@
 
 
 
-				<p class="text-center"><a class="btn btn-meflat scrollto white icon-left" href="#contact"><i class="fa fa-arrow-down"></i>Hire Me</a></p>
+				<p class="text-center"><a class="btn btn-meflat scrollto white icon-left" href="#contact"><i class="fa fa-arrow-down"></i>Contact Me</a></p>
 
 			</div>
 
@@ -306,24 +308,6 @@
 
 				</header>
 
-				<!--==== Portfolio Filters ====-->
-				<div id="filter-works">
-					<ul>
-						<li class="active scrollimation fade-right d1">
-							<a href="#" data-filter="*">All</a>
-						</li>
-						<li class="scrollimation fade-right">
-							<a href="#" data-filter=".web-design">Web Design</a>
-						</li>
-						<li class="scrollimation fade-left">
-							<a href="#" data-filter=".icons">Icons</a>
-						</li>
-						<li class="scrollimation fade-left d1">
-							<a href="#" data-filter=".ui-kits">UI Kits</a>
-						</li>
-					</ul>
-				</div><!--End portfolio filters -->
-
 			</div><!--End portfolio header -->
 
 			<div class="container masonry-wrapper scrollimation fade-in">
@@ -335,7 +319,7 @@
 					=============================================== -->
 					<article class="project-item web-design">
 
-						<img class="img-responsive project-image" src="images/placeholder-320x210.jpg"  alt=""><!--Project thumb -->
+						<img class="img-responsive project-image" src="images/tic_tac_toe.png"  alt=""><!--Project thumb -->
 
 						<div class="hover-mask">
 							<h2 class="project-title">Tic Tac Toe</h2><!--Project Title -->
@@ -366,25 +350,31 @@
 						<img class="img-responsive project-image" src="images/placeholder-320x210.jpg"  alt=""><!--Project thumb -->
 
 						<div class="hover-mask">
-							<h2 class="project-title">Project Title</h2><!--Project Title -->
-							<p>Subtitle</p><!--Project Subtitle -->
+							<h2 class="project-title">Deaddrops</h2><!--Project Title -->
+							<p>Location-based file sharing</p><!--Project Subtitle -->
 						</div>
 
 						<!--==== Project Preview HTML ====-->
 
 						<div class="sr-only project-description"
-							data-category="Category"
-							data-date="Date"
-							data-client="Client"
-							data-link="www.example.com,http://www.google.com"
-							data-descr="A small description goes here."
+							data-date="5th June 2015"
+							data-descr="A file sharing application that uses HTML5 geolocation technologies pin files on a world map."
 							data-images="images/placeholder-750x430.jpg,images/placeholder-750x430.jpg"
 						>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+							<p>Deaddrops is a file sharing platform that allows users to upload and share content.  The difference between this application and regular file sharing sites is that content is uploaded based on the user's current geographical location.  Other users will not have visibility of that content until they are within a 100m radius of the files position.</p>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-							<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
-							<p class="text-right"><a class="btn btn-meflat icon-right" href="#external-link">Visit Website<i class="fa fa-arrow-right"></i></a></p>
+							<p>Users wishing to discover nearby content can use the application's map interface.  By analysing each individual file and its location, a heatmap is generated to indicate where files are in relation to the current user's location.  If the user was located next to a large cluster of files they would see a geographical hotspot on the map.</p>
+
+							<h2>Technical Stuff</h2>
+							<ul>
+								<li>HTML5 geolocation to track the location of users and file uploads</li>
+								<li>Ruby on Rails backend for CRUD system</li>
+								<li>Latitude/longitude reverse-geocoded for location-based queries on the database</li>
+								<li>Utilising the Cloudinary API to store files uploaded by users and accessed via the discovery interface</li>
+							</ul>
+
+							<p class="text-right"><a class="btn btn-meflat icon-right" href="http://tobyf93.github.io/WDI-Project-0/">Codebase</a></p>
+							<p class="text-right"><a class="btn btn-meflat icon-right" href="http://tobyf93.github.io/WDI-Project-0/">Live Demo</a></p>
 						</div>
 
 					</article><!--End Project Item -->
@@ -559,32 +549,7 @@
 			</div><!-- End modal -->
 
 		</section>
-		<!-- ==============================================
-		DRIBBLE
-		=============================================== -->
-		<section id="dribbble">
-			<h1 class="dribbble-button"><a href="#" target="_blank">My Dribbble Shots</a></h1>
-				<div class="row">
-					<div class="col-md-2 col-sm-4 col-xs-6">
-						<a href="#link" target="_blank"><img class="img-responsive" src="images/placeholder-375x250.jpg"  alt=""></a>
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-						<a href="#link" target="_blank"><img class="img-responsive" src="images/placeholder-375x250.jpg"  alt=""></a>
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-						<a href="#link" target="_blank"><img class="img-responsive" src="images/placeholder-375x250.jpg"  alt=""></a>
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-						<a href="#link" target="_blank"><img class="img-responsive" src="images/placeholder-375x250.jpg"  alt=""></a>
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-						<a href="#link" target="_blank"><img class="img-responsive" src="images/placeholder-375x250.jpg"  alt=""></a>
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-						<a href="#link" target="_blank"><img class="img-responsive" src="images/placeholder-375x250.jpg"  alt=""></a>
-					</div>
-				</div>
-		</section>
+
 		<!-- ==============================================
 		CONTACT
 		=============================================== -->
@@ -666,6 +631,7 @@
 		<script src="javascripts/jquery.easypiechart.js"></script>
 		<script src="javascripts/contact.js"></script>
 		<script src="javascripts/meflat.js"></script>
+		<script src="javascripts/overrides.js"></script>
 
 	</body>
 
