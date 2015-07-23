@@ -67,16 +67,16 @@
 
 				<div id="site-nav" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li id="logo">
-							<a href="#home" class="scrollto">
-								<h1>T<span>F</span></h1>
-							</a>
-						</li>
 						<li>
 							<a href="#about" class="scrollto">About Me</a>
 						</li>
 						<li>
 							<a href="#services" class="scrollto">What I Do</a>
+						</li>
+						<li id="logo">
+							<a href="#home" class="scrollto">
+								<h1>T<span>F</span></h1>
+							</a>
 						</li>
 						<li>
 							<a href="#portfolio" class="scrollto">Latest Projects</a>
@@ -310,10 +310,8 @@
 						<!--==== Project Preview HTML ====-->
 
 						<div class="sr-only project-description"
-							data-category="Category"
-							data-date="Date"
-							data-client="Client"
-							data-link="www.example.com,http://www.google.com"
+							data-category="General Assembly"
+							data-date="17th July 2015"
 							data-descr="A small description goes here."
 							data-images="images/tranexec_prev1.png, images/tranexec_prev2.png, images/tranexec_prev3.png, images/tranexec_prev4.png, images/tranexec_prev5.png"
 						>
@@ -321,7 +319,9 @@
 
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
 							<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
-							<p class="text-right"><a class="btn btn-meflat icon-right" href="#external-link">Visit Website<i class="fa fa-arrow-right"></i></a></p>
+
+							<p class="text-right"><a class="btn btn-meflat icon-right" href="https://github.com/harrisdm/TranExec">Codebase</a></p>
+							<p class="text-right"><a class="btn btn-meflat icon-right" href="#">Live Demo</a></p>
 						</div>
 
 					</article><!--End Project Item -->
@@ -339,17 +339,27 @@
 
 						<div class="sr-only project-description"
 							data-category="General Assembly"
-							data-date="Date"
-							data-client="Client"
-							data-link="www.example.com,http://www.google.com"
+							data-date="26th June 2015"
 							data-descr="A small description goes here."
 							data-images="images/placeholder-750x430.jpg,images/placeholder-750x430.jpg"
 						>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+							<p>The purpose of this project was to take an existing application (Drawful by Jackful games) and use our recently acquired web development skills to reproduce it.  Drawsome is a game designed for 3-8 players, each competing on separate web browsers.</p>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-							<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
-							<p class="text-right"><a class="btn btn-meflat icon-right" href="#external-link">Visit Website<i class="fa fa-arrow-right"></i></a></p>
+							<p>The game features free-hand drawing onto a blank space, made possible through HTML5's Canvas API with help from the Paper.js library.  In order to achieve a real-time drawing effect across all clients, websockets were used for client/server communication.  While the 'drawer' interacted with the games canvas, graphical data was sent through our Ruby on Rails backend and emitted to all participating players.  This was all tied together using a single-page Backbone application to give the user a pleasant gaming experience.</p>
+
+							<p>Overall we were very happy with how the project turned out considering how ambitious it was for a weeks work.  It certainly kept us busy and we were all able to learn new skills in web development and team work.  However, we are aware of many problems that could be resolved and have come up with the following improvements:
+								<ul>
+									<li>Optimise Backbone.js views</li>
+									<li>Support multiple games running simultaneously</li>
+									<li>Offer a flexible colour palette</li>
+									<li>Anti-aliasing on canvas paths</li>
+								</ul>
+							</p>
+
+							<h2>Technical Stuff</h2>
+
+							<p class="text-right"><a class="btn btn-meflat icon-right" href="https://github.com/tobyf93/WDI-Project-2">Codebase</a></p>
+							<p class="text-right"><a class="btn btn-meflat icon-right" href="https://drawsome.herokuapp.com">Live Demo</a></p>
 						</div>
 
 					</article><!--End Project Item -->
