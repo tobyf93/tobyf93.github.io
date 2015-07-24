@@ -6,6 +6,10 @@
   font-weight: bold;
 }
 
+.project-item {
+  border: 1px solid #1D2026;
+}
+
 #contact header {
   margin-bottom: 0;
 }
