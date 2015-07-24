@@ -446,7 +446,6 @@
 
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
 							<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
-							<p class="text-right"><a class="btn btn-meflat icon-right" href="#external-link">Visit Website<i class="fa fa-arrow-right"></i></a></p>
 						</div>
 
 					</article><!--End Project Item -->
@@ -464,16 +463,24 @@
 
 						<div class="sr-only project-description"
 							data-category="Commercial Work"
-							data-date="Date"
+							data-date="27th February 2015"
 							data-client="BSM Global Pty Ltd"
-							data-descr="A small description goes here."
+							data-descr="Tool to allow internal staff to set future client fees and calculate a revenue forcast based on past transactions."
 							data-images="images/fba_prev1.png"
 						>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+							<p>Whilst working as a Software Developer for BSM Global Pty Ltd, we were faced with an issue involving client fees.  Our company consultants were responsible for manually setting new fees following the start of every year and this was becoming seriously unreliable.</p>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-							<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
-							<p class="text-right"><a class="btn btn-meflat icon-right" href="#external-link">Visit Website<i class="fa fa-arrow-right"></i></a></p>
+							<p>My solution featured a simple interface whereby consultants could log into a client site and setup future billing agreements e.g. 1 year from now, 2 years from now...  They were able to set and forget, knowing that new settings would automatically be applied at the correct time without further user action.</p>
+
+							<p>The left-most panel of the interface includes individual form fields for the clients settings.  A simple slider at the bottom allows users to switch from year to year without having to reload the page.</p>
+
+							<p>The application also uses historical client data to deliver revenue forecasts in real time as client fees are changed or tweaked.  Data visualisations help consultants make better judgements e.g. what fees need to be altered in order to maintain a steady increase in revenue over time?</p>
+
+							<h2>Technical Stuff</h2>
+							<li>CGI programs written in C to serve up content</li>
+							<li>JavaScript/jQuery for form interactions</li>
+							<li>AJAX requests to backend server to update data visualisations</li>
+							<li>UNIX Cron jobs used to apply new settings at the beginning of each year</li>
 						</div>
 
 					</article><!--End Project Item -->
