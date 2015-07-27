@@ -243,6 +243,12 @@
 
 							<p>This project has been an initial demonstration for the client to show what can be achieved. There is great potential for this project to be extended to include a complete management system; facilitating the ability to track participants through sessions and report on actions needing attention.</p>
 
+							<h2>Technical Stuff</h2>
+							<li>Ruby on Rails used for the CRUD system used by admins - Adding/removing projects, workshops, participants, appointments</li>
+							<li>postgreSQL database to store client data</li>
+							<li>Single page application to allow clients to book appointments in realtime using Backbone.js and websockets (websocket-rails gem).</li>
+							<li>Custom calendar functions used to produce iCal events that can be exported</li>
+
 							<p class="text-right"><a class="btn btn-meflat icon-right" href="https://github.com/harrisdm/TranExec" target="_blank">Codebase</a></p>
 							<p class="text-right"><a class="btn btn-meflat icon-right" href="#" target="_blank">Live Demo</a></p>
 						</div>
@@ -263,23 +269,19 @@
 						<div class="sr-only project-description"
 							data-category="General Assembly"
 							data-date="26th June 2015"
-							data-descr="A small description goes here."
+							data-descr="Multiplayer game created with Michael Cooper, Charles Lee and Reena Rajani."
 							data-images="images/drawsome_prev1.png, images/drawsome_prev2.png"
 						>
 							<p>The purpose of this project was to take an existing application (Drawful by Jackful games) and use our recently acquired web development skills to reproduce it.  Drawsome is a game designed for 3-8 players, each competing on separate web browsers.</p>
 
 							<p>The game features free-hand drawing onto a blank space, made possible through HTML5's Canvas API with help from the Paper.js library.  In order to achieve a real-time drawing effect across all clients, websockets were used for client/server communication.  While the 'drawer' interacted with the games canvas, graphical data was sent through our Ruby on Rails backend and emitted to all participating players.  This was all tied together using a single-page Backbone application to give the user a pleasant gaming experience.</p>
 
-							<p>Overall we were very happy with how the project turned out considering how ambitious it was for a weeks work.  It certainly kept us busy and we were all able to learn new skills in web development and team work.  However, we are aware of many problems that could be resolved and have come up with the following improvements:
-								<ul>
-									<li>Optimise Backbone.js views</li>
-									<li>Support multiple games running simultaneously</li>
-									<li>Offer a flexible colour palette</li>
-									<li>Anti-aliasing on canvas paths</li>
-								</ul>
-							</p>
-
 							<h2>Technical Stuff</h2>
+							<li>Interface made possible by Basscss</li>
+							<li>Ruby on Rails backend for keeping track of players and games running</li>
+							<li>Realtime player interaction using a Rails websocket gem</li>
+							<li>postgreSQL database</li>
+							<li>Games controlled via a master/slave arcitechture - one player selected to host game</li>
 
 							<p class="text-right"><a class="btn btn-meflat icon-right" href="https://github.com/tobyf93/WDI-Project-2" target="_blank">Codebase</a></p>
 							<p class="text-right"><a class="btn btn-meflat icon-right" href="https://drawsome.herokuapp.com" target="_blank">Live Demo</a></p>
@@ -308,7 +310,7 @@
 
 							<p>Users wishing to discover nearby content can use the application's map interface.  By analysing each individual file and its location, a heatmap is generated to indicate where files are in relation to the current user's location.  If the user was located next to a large cluster of files they would see a geographical hotspot on the map.</p>
 
-							<p>For more background information on the original Deaddrops concept made popular by Berlin-based artist Aram Bartholl <a href="https://deaddrops.com">click here</a>.</p>
+							<p>For more background information on the original Deaddrops concept made popular by Berlin-based artist Aram Bartholl <a href="https://deaddrops.com" target="_blank">click here</a>.</p>
 
 							<h2>Technical Stuff</h2>
 							<ul>
@@ -347,7 +349,7 @@
 							<p>Being a web-based game that runs client-side, the logic used to determine the various game states was implemented using JavaScript.  Click event handlers on the 3x3 grid were setup to receive input from the users.  Upon each player move the game checked for ending game and incrementing the player score counters appropriately.</p>
 							<p>Players also have the choice of playing against a computer with Artificial Intelligence, lots of Artificial Intelligence.  Using a minmax algorithm, the computer player maps out all possible game states in order to choose the optimal move.  This means that the AI is unbeatable!</p>
 
-							<p class="text-right"><a class="btn btn-meflat icon-right" href="http://tobyf93.github.io/WDI-Project-0/" target="_blank">Codebase</a></p>
+							<p class="text-right"><a class="btn btn-meflat icon-right" href="https://github.com/tobyf93/WDI-Project-0" target="_blank">Codebase</a></p>
 							<p class="text-right"><a class="btn btn-meflat icon-right" href="http://tobyf93.github.io/WDI-Project-0/" target="_blank">Live Demo</a></p>
 						</div>
 
@@ -381,9 +383,9 @@
 							<p>Once complete, the user can produce a web-preview of the document before saving it as a Document Type.</p>
 
 							<h2>Technical Stuff</h2>
-							<li>blah</li>
-							<li>blah</li>
-							<li>blah</li>
+							<li>jQueryUI used for element controls - dragging, resizing, snapping to grid</li>
+							<li>In-house PDF libraries used to produce output</li>
+							<li>Backend server used for interpretting element positions, parsing document expressions and returning responses (errors, PDF files)</li>
 						</div>
 
 					</article><!--End Project Item -->
@@ -441,11 +443,20 @@
 							data-descr="Simple mobile interface using Ionic, an open-source framework for creating hybrid mobile apps."
 							data-images="images/ionic_prev1.png"
 						>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+							<p>While studying at General Assembly, students were required to complete regular homework tasks.  One of the tasks was to create a simple web interface for a pair of bank accounts.  Each bank account allowed users to deposit/withdraw funds.</p>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-							<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
-							<p class="text-right"><a class="btn btn-meflat icon-right" href="#external-link">Visit Website<i class="fa fa-arrow-right"></i></a></p>
+							<p>After completing the web interface I decided to take my project a step further and implement the bank account using Ionic's framework for developing hybrid mobile apps.  Using the components made available by the Ionic library I was able to develop a simple mobile application that could run on both Android and iOS platforms.</p>
+
+							<h2>Technical Stuff</h2>
+							<ul>
+								<li>App interaction using angularJS HTML directives</li>
+								<li>Data-binding for handling account balances between views and controllers</li>
+								<li>jQuery used to add/remove classes on elements displaying account balances</li>
+								<li>3 controllers (MainController, CheckingController and SavingsController) used to create appropriate scoping</li>
+							</ul>
+
+							<p class="text-right"><a class="btn btn-meflat icon-right" href="https://github.com/tobyf93/First-Ionic-App" target="_blank">Codebase</a></p>
+							<p class="text-right"><a class="btn btn-meflat icon-right" href="http://tobyf93.github.io/First-Ionic-App" target="_blank">Live Demo</a></p>
 						</div>
 
 					</article><!--End Project Item -->
